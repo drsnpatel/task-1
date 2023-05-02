@@ -1,4 +1,5 @@
 import {Client} from 'pg';
+// import {client} from '../conn';
 
 const client = new Client({
     host: "localhost",
@@ -30,3 +31,5 @@ client.query(
     console.log('created table result');
         client.end();
 })
+
+export default client
